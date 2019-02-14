@@ -192,7 +192,7 @@
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 4%;
+    bottom: calc(1% + 2vh);
 }
 
 .link {
@@ -206,13 +206,25 @@
 }
 
 .link a {
-    font-size: 60px;
+    font-size: 44px;
     color: rgba(127,127,127,255);
 }
 
 #link a:hover {
     text-decoration: underline;
 }
+
+@media (min-width: 1680px) {
+    .link a {
+        font-size: 54px;
+    } {
+    bottom: calc(1% + 3vh);
+}
+}
+
+
+
+
 
 /*Laptops - Video*/
 @media (min-width: 1025px) and (max-width: 1280px) and (max-height: 700px) {
