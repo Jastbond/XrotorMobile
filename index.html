@@ -83,8 +83,8 @@
           href='http://home.vik/wordpress/wp-includes/css/dist/block-library/style.min.css?ver=5.0.3' media='all'/>
     <link rel='stylesheet' id='normalize-css'
           href='http://home.vik/wordpress/wp-content/themes/html5blank-stable/normalize.css?ver=1.0' media='all'/>
-    <link rel='stylesheet' id='html5blank-css'
-          href='http://home.vik/wordpress/wp-content/themes/html5blank-stable/style.css?ver=1.0' media='all'/>
+    <!--<link rel='stylesheet' id='html5blank-css'
+          href='http://home.vik/wordpress/wp-content/themes/html5blank-stable/style.css?ver=1.0' media='all'/>-->
     <link rel='stylesheet' href='style.css' media='all'/>
     <script type='text/javascript'
             src='http://home.vik/wordpress/wp-content/themes/html5blank-stable/js/lib/conditionizr-4.3.0.min.js?ver=4.3.0'></script>
@@ -136,11 +136,13 @@
         <div class="vidMobile fullscreen-bg">
             <div class="fullscreen-bg__image">
                 <img class="logo" src="img/text.png" alt="">
-                <div class="logoWrap"><img id="rotor" class="rotor logo" src="img/rotor.png" alt=""></div>
+                <div class="logoWrap" id="logoWrap">
+                    <img id="rotor" class="rotor logo" src="img/rotor.png" alt="">
+                </div>
                 <p class="stealth">(CURRENTLY IN STEALTH MODE)</p>
             </div>
         </div>
-        <div id="cont" class="content">
+        <div class="content">
             <p class="linkHidden" id="link" ><a href="mailto:contact@xrotor.com.au">contact@xrotor.com.au</a></p>
         </div>
         <!-- /section -->
@@ -159,11 +161,14 @@
                 }
                 link.classList.remove('linkHidden');
                 link.classList.add('link');
+                var linkBottom = ((parseInt(getComputedStyle(document.querySelector(".fullscreen-bg")).height) - parseInt(getComputedStyle(vid).height)))/2+parseInt(getComputedStyle(vid).height)*.85;
+                link.style.top = linkBottom+'px';
             }
             logoWrap.style.width =  getComputedStyle(rotor).width;
             logoWrap.style.height =  getComputedStyle(rotor).height;
             logoWrap.style.position = "absolute";
             logoWrap.style.top = "0";
+
         };
     </script>
 </div>
