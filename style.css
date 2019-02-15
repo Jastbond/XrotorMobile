@@ -170,7 +170,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 99vh;
 }
 
 .vidMobile {
@@ -194,6 +194,7 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: calc(1% + 2vh);
+    margin: 0;
 }
 
 .link {
