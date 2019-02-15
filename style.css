@@ -208,7 +208,7 @@
 }
 
 .link a {
-    font-size: 44px;
+    font-size: 46px;
     color: rgba(127,127,127,255);
 }
 
@@ -216,7 +216,7 @@
     text-decoration: underline;
 }
 
-@media (min-width: 1680px) {
+@media (max-width: 1680px) {
     .link a {
         font-size: 44px;
     }
