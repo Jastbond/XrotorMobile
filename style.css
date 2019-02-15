@@ -265,6 +265,9 @@
     .stealth {
         font-size: 34px;
     }
+    #link {
+        bottom: 12%;
+    }
 }
 @media (min-width: 481px) and (max-width: 767px) {
     #link a {
@@ -294,6 +297,9 @@
     }
     .stealth {
         font-size: 16px;
+    }
+    #link {
+        bottom: 12%;
     }
 }
 /*Mobiles Animation Landscape*/
@@ -366,7 +372,7 @@
         visibility: visible;
     }
     #link {
-        bottom: 10%;
+        bottom: 12%
     }
     #link a{
         font-size: 30px;
