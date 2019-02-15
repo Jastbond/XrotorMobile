@@ -212,33 +212,26 @@
     color: rgba(127,127,127,255);
 }
 
-#link a:hover {
+.link a:hover {
     text-decoration: underline;
 }
 
+/*Desktops 22''*/
 @media (max-width: 1680px) {
     .link a {
         font-size: 44px;
     }
 }
 
-
-
-
-
 /*Laptops - Video*/
-@media (min-width: 1025px) and (max-width: 1280px) and (max-height: 700px) {
-    #link {
-        bottom: calc(4% - 20px);
-}
-
-    #link a {
-        font-size: 30px;
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .link a {
+        font-size: 32px;
     }
 }
 
-/*Mobile Images Portrait*/
-@media (min-width: 768px) and (max-width: 1024px) {
+/*Mobile Animation*/
+@media (max-width: 1024px) {
     .vid {
         display: none;
         opacity: 0;
@@ -257,31 +250,14 @@
         animation: imageOpa 2s ease 9s forwards;
         visibility: visible;
     }
+    #link {
+        bottom: 9%;
+    }
 }
+
+
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .vid {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .vidMobile {
-        display: inline-block;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .linkHidden {
-        display: inline-block;
-        -webkit-animation: imageOpa 2s ease 1s forwards;
-        animation: imageOpa 2s ease 9s forwards;
-        visibility: visible;
-    }
-
-    #link {
-        bottom: calc(3% - 20px);
-    }
 
     #link a {
         font-size: 20px;
@@ -293,28 +269,7 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .vid {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
 
-    .vidMobile {
-        display: inline-block;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .linkHidden {
-        display: inline-block;
-        -webkit-animation: imageOpa 2s ease 1s forwards;
-        animation: imageOpa 2s ease 9s forwards;
-        visibility: visible;
-    }
-
-    #link {
-        bottom: calc(3% - 20px);
-    }
 
     #link a {
         font-size: 20px;
@@ -327,29 +282,6 @@
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .vid {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .vidMobile {
-        display: inline-block;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .linkHidden {
-        display: inline-block;
-        -webkit-animation: imageOpa 2s ease 1s forwards;
-        animation: imageOpa 2s ease 9s forwards;
-        visibility: visible;
-    }
-
-    #link {
-        bottom: 10%;
-    }
-
     #link a {
         font-size: 16px;
     }
@@ -361,29 +293,6 @@
 
 /*Mobiles Image Landscape*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .vid {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .vidMobile {
-        display: inline-block;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .linkHidden {
-        display: inline-block;
-        -webkit-animation: imageOpa 2s ease 1s forwards;
-        animation: imageOpa 2s ease 9s forwards;
-        visibility: visible;
-    }
-
-    #link {
-        bottom: calc(2% - 22px);
-    }
-
     #link a {
         font-size: 24px;
     }
@@ -399,32 +308,18 @@
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-    .vid {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .vidMobile {
-        display: inline-block;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .linkHidden {
-        display: inline-block;
-        -webkit-animation: imageOpa 2s ease 1s forwards;
-        animation: imageOpa 2s ease 9s forwards;
-        visibility: visible;
-    }
-
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (max-height: 400px) {
     #link {
-        bottom: calc(2% - 25px);
+        bottom: 2%;
     }
+}
 
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    #link {
+        bottom: 6%;
+    }
     #link a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .fullscreen-bg__image {
@@ -439,32 +334,14 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
-    .vid {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .vidMobile {
-        display: inline-block;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .linkHidden {
-        display: inline-block;
-        -webkit-animation: imageOpa 2s ease 1s forwards;
-        animation: imageOpa 2s ease 9s forwards;
-        visibility: visible;
-    }
-
+@media (max-width: 480px) and (orientation: landscape) {
     #link {
-        bottom: -12%;
+        bottom: 5%;
     }
+
 
     #link a {
-        font-size: 16px;
+        font-size: 14px;
 
     }
 
@@ -496,7 +373,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         opacity: 1;
         visibility: visible;
     }
-    .linkHidden {
+    #linkHidden {
         display: inline-block;
         animation: imageOpa 2s ease 9s forwards;
         visibility: visible;
