@@ -50,8 +50,8 @@
     height: 100vh;
     position: absolute;
     z-index: 10;
-    -webkit-animation: preload 1s steps(1,end) forwards;
-    animation: preload 1s steps(1,end) forwards;
+    -webkit-animation: preload 2s steps(1,end) forwards;
+    animation: preload 2s steps(1,end) forwards;
 }
 .mobilePreloadGif {
     width: 100%;
@@ -476,12 +476,12 @@
     -webkit-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    -webkit-animation: rotMain 7s cubic-bezier(.26,.55,.38,1.02) 1s forwards, fluct 2s ease-in-out 8s forwards;
-    animation: rotMain 7s cubic-bezier(.26,.55,.38,1.02) 1s forwards, fluct 2s ease-in-out 8s forwards;
+    -webkit-animation: rotMain 7s cubic-bezier(.26,.55,.38,1.02) 2s forwards, fluct 2s ease-in-out 9s forwards;
+    animation: rotMain 7s cubic-bezier(.26,.55,.38,1.02) 2s forwards, fluct 2s ease-in-out 9s forwards;
 }
 .rotor {
-    -webkit-animation: scaleMain 2s 1s;
-    animation: scaleMain 2s 1s;
+    -webkit-animation: scaleMain 2s 2s;
+    animation: scaleMain 2s 2s;
 }
 
 
