@@ -33,47 +33,36 @@
         </div>
         <div class="vidMobile fullscreen-bg">
             <div class="mobilePreload"><img src="img/load_fullscreen.gif" alt="" class="mobilePreloadGif"></div>
-            <div class="fullscreen-bg__image">
-                <img class="logoText " src="img/logo_text_600x1006.png" alt="">
-                <div class="logoWrap" id="logoWrap">
-                    <img id="rotor" class="logoRotor" src="img/logo_rotor_600x1006.png" alt="">
+            <div class="vidMobile fullscreen-bg">
+                <div class="mobilePreload"><img src="img/load_fullscreen.gif" alt="" class="mobilePreloadGif"></div>
+                <div class="fullscreen-bg__image">
+                    <img class="logoText " src="img/logo_text_600x1006.png" alt="">
+                    <div class="logoWrap" id="logoWrap">
+                        <img id="rotor" class="logoRotor" src="img/logo_rotor_600x1006.png" alt="">
+                    </div>
                 </div>
-                <p class="stealth">(CURRENTLY IN STEALTH MODE)</p>
+                <div class="stealth"><p >(CURRENTLY IN STEALTH MODE)</p></div>
             </div>
-        </div>
-        <div class="content">
-            <p class="linkHidden" id="link" ><a href="mailto:contact@xrotor.com.au">contact@xrotor.com.au</a></p>
+            <div class="content">
+                <p class="linkHidden" id="link"><a href="mailto:contact@xrotor.com.au">contact@xrotor.com.au</a></p>
+            </div>
         </div>
         <!-- /section -->
     </main>
     <script>
-/*        window.onload = function () {*/
-            var vid = document.getElementById('vid');
-            var link = document.getElementById('link');
-            var logoWrap = document.getElementById('logoWrap');
-            var rotor = document.getElementById('rotor');
-            var touchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
+        vid.addEventListener('ended', myHandler, false);
 
-/*            if (touchDevice) {
-                logoWrap.style.width = getComputedStyle(rotor).width;
-                logoWrap.style.height = getComputedStyle(rotor).height;
-                logoWrap.style.position = "absolute";
-                logoWrap.style.top = "0";
-            } else {*/
-                vid.addEventListener('ended', myHandler, false);
-                console.log('AddListener');
-                function myHandler(e) {
-                    if (!e) {
-                        e = window.event;
-                    }
-                    console.log('MyHandler')
-                    link.classList.remove('linkHidden');
-                    link.classList.add('link');
-                    var linkBottom = ((parseInt(getComputedStyle(document.querySelector(".fullscreen-bg")).height) - parseInt(getComputedStyle(vid).height))) / 2 + parseInt(getComputedStyle(vid).height) * .86;
-                    link.style.top = linkBottom + 'px';
-                /*}*/
+        function myHandler(e) {
+            if (!e) {
+                e = window.event;
             }
-/*        } ;*/
+            console.log('MyHandler')
+            link.classList.remove('linkHidden');
+            link.classList.add('link');
+            var linkBottom = ((parseInt(getComputedStyle(document.querySelector(".fullscreen-bg")).height) - parseInt(getComputedStyle(vid).height))) / 2 + parseInt(getComputedStyle(vid).height) * .86;
+            link.style.top = linkBottom + 'px';
+        }
+
     </script>
 </div>
 </body>
